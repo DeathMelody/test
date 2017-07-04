@@ -4,3 +4,4 @@ function fun(){
     console.log(date);
 }
 fun();
+console.log("js?")
