@@ -2,3 +2,8 @@
 轧刚成品    棒材，线材，钢板，卷板，
 
 炼钢-轧钢-精整。
+
+CrudService<TaDemo>.Proxy.GetAll().ToObserveList();//查询方法
+gridView1.BestFitColumns();//更改为合适列宽;
+SequenceService.Proxy.GenerateLocalId();//生成id
+binding.GetTrackingEntryList<TaDemo>().SaveChanges();
