@@ -1,4 +1,4 @@
-炼钢：       铁水包，转炉，精炼，连铸    加热炉，
+﻿炼钢：       铁水包，转炉，精炼，连铸    加热炉，
 轧刚成品    棒材，线材，钢板，卷板，
 
 炼钢-轧钢-精整。
@@ -6,4 +6,5 @@
 CrudService<TaDemo>.Proxy.GetAll().ToObserveList();//查询方法
 gridView1.BestFitColumns();//更改为合适列宽;
 SequenceService.Proxy.GenerateLocalId();//生成id
-binding.GetTrackingEntryList<TaDemo>().SaveChanges();
+binding.GetTrackingEntryList<TaDemo>().SaveChanges();弹框新增返回后写的语句
+ObservableList<TaXi>).SaveChanges();提交方法
