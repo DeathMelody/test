@@ -43,21 +43,34 @@ var c = function (s){
 // clg("八进制："+eight);
 // clg("十六进制："+sixteen);
 // clg("指数？？？"+index);
-var biggestNum = Number.MAX_VALUE;//最大值
-var smallestNum = Number.MIN_VALUE;//最小值
-var infintteNum = Number.POSITIVE_INFINITY;//正无穷
-var negInfiniteNum = Number.NEGATIVE_INFINITY;//负无穷
-var epsilon = Number.EPSILON;//表示1和比最接近1且大于1的最小Number之间的差别
-var MinSaff = Number.MIN_SAFE_INTEGER;
-var maxSaff = Number.MAX_SAFE_INTEGER;
-c("Number最大值："+biggestNum);
-c("Number最小值："+smallestNum);
-c("Number正无穷:"+infintteNum);
-c("Number负无穷："+negInfiniteNum);
-c(epsilon);
-c("最小安全整数"+MinSaff);
-c("最大安全整数"+maxSaff);
+// var biggestNum = Number.MAX_VALUE;//最大值
+// var smallestNum = Number.MIN_VALUE;//最小值
+// var infintteNum = Number.POSITIVE_INFINITY;//正无穷
+// var negInfiniteNum = Number.NEGATIVE_INFINITY;//负无穷
+// var epsilon = Number.EPSILON;//表示1和比最接近1且大于1的最小Number之间的差别
+// var MinSaff = Number.MIN_SAFE_INTEGER;
+// var maxSaff = Number.MAX_SAFE_INTEGER;
+// c("Number最大值："+biggestNum);
+// c("Number最小值："+smallestNum);
+// c("Number正无穷:"+infintteNum);
+// c("Number负无穷："+negInfiniteNum);
+// c(epsilon);
+// c("最小安全整数"+MinSaff);
+// c("最大安全整数"+maxSaff);
 
-var str = "515";
-var dou = Number.parseFloat(str)
-c(dou)
+// var str = "515";
+// var dou = Number.parseFloat(str)
+// c(dou)
+// Number.parseFloat
+var arr = [1,2,3,4,5];
+var f =
+    // var arr1 = [];
+    // for(var i = 0; i<x.length;i++){
+    //     arr1.push(x[i]+0.5);
+    // }
+    // arr1.pop();
+    // return arr1;
+    arr.map(function(item) {
+       return item+0.5;
+    }).pop();
+c(f)//[1.5,2.5,3.5,4.5]
