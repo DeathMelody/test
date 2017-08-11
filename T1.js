@@ -90,9 +90,11 @@ var i = 0b0101010001010110;
 // c(Math.floor(123));
 // c(Math.min(1,2));//返回逗号间隔的较小的值，max()返回较大的值
 c(parseInt(100*Math.random()));
+
 //四舍五入                   数字的最接近的单精度浮点数表示       截断小数点后面的数
 c("round:"+Math.round(4.5)+",fround:"+Math.fround(4.4)+",trunc:"+Math.trunc(4.5));
 c("sqrt:"+Math.sqrt(9)+",cbrt:"+Math.cbrt(9)+",hypot:"+Math.hypot(9));//平方根，立方根，第三没看懂
-    
+
+
 
 
