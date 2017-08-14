@@ -96,7 +96,9 @@ var c = function (x){console.log(x)}
 // c("sqrt:"+Math.sqrt(9)+",cbrt:"+Math.cbrt(9)+",hypot:"+Math.hypot(9));//平方根，立方根，第三没看懂
 
 //时间日期对象
-var dateObjectName =  Date()
-c(dateObjectName);
+// var dateObjectName =  Date()
+// c(dateObjectName);
+//16进制转义序列
 
+c('\xA9')
 
