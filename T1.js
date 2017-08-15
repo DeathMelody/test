@@ -99,6 +99,19 @@ var c = function (x){console.log(x)}
 // var dateObjectName =  Date()
 // c(dateObjectName);
 //16进制转义序列
+//c('\xA9')//©
 
-c('\xA9')
+//字符串对象
+// var s = new String("foo");
+// c(s);
+// c(typeof(s));//object
+
+var str = "Hello,World";
+c(str.charAt(2));//l,,,根据参数返回指定字符
+c(str.charCodeAt(2))//根据参数，返回字符编码
+c(str.indexOf("H"));//6...搜索一个字符串并返回该字符串的位置从0开始
+c(str.lastIndexOf("H"))//从后面开始查，返回字符位置
+c(str.startsWith("h"))//查看开头字符是否是已指定字符开头返回true或false区分大小写
+c(str.endsWith("d"))//查看结尾字符是否是已指定字符结尾返回true或false区分大小写
+c(str.includes("w"))//查看中间字符是否包含指定字符返回true或false区分大小写
 
