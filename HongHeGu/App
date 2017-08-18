@@ -3,8 +3,37 @@
 
 炼钢-轧钢-精整。
 
-CrudService<TaDemo>.Proxy.GetAll().ToObserveList();//查询方法
+CrudService<TaDemo>.Proxy.GetAll().astak();//查询方法
 gridView1.BestFitColumns();//更改为合适列宽;
 SequenceService.Proxy.GenerateLocalId();//生成id
 binding.GetTrackingEntryList<TaDemo>().SaveChanges();弹框新增返回后写的语句
-ObservableList<TaXi>).SaveChanges();提交方法
+gridcontrolDataSourt<TaXi>.SaveChanges();提交方法
+
+缓存：
+GlueNet.Caching.GlueMemoryCache catchInfo = new GlueNet.Caching.GlueMemoryCache();
+catchInfo.Set("lzx","asdfasdfasdfasdfasdf",3000);
+catchInfo.Get("lzx");
+
+获取登录用户信息：
+GlueNet.AppContext.Current.User.XXX;
+
+
+获取服务器信息：
+GlueNet.Bussiness.CommonService.Proxy.XXXX;
+
+
+加解密：
+GlueNet.Security.SimpleCipherHelper.XXX;
+
+
+日志：
+本地日志：GlueNet.Logging.ILogger log = GlueNet.Logging.LogManager.GetDefaultLogger();
+          log.Info("");
+数据库日志：GlueNet.Bussiness.LogToDbService.Proxy.Write("");
+
+
+事务：注意事务要写在服务中
+using (var uow=GlueNet.Domain.Uow.UnitOfWorkManager.RequiresNew())
+{
+//事务内容
+	uow.Complete();
