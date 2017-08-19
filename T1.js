@@ -132,7 +132,16 @@ var o ={
     },
     log:[]
 }
-
+c(o);
+//dateTimeFormat
+var msPerDay = 24 * 60 * 60 * 1000;
+var july = new Date(msPerDay*(44*365+11+197));
+var options = {
+    year:"2-digit",month:"2-digit",day:"2-digit",
+    hour:"2-digit",miunte:"2-digit",timeZoneName:"short"
+};
+var american = new Intl.DateTimeFormat("en-US",options).format;
+c(american(july));
 
 
 
